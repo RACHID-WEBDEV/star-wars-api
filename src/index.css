@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  @apply bg-white;
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply hidden;
+  width: 0;
+  background: transparent; /* make scrollbar transparent */
+}
+
+/* make scrollbar transparent on Firefox, IE and Edge*/
+.scrollbar {
+  @apply scroll-p-0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.logo-style {
+  object-fit: contain;
+  margin-top: -40px;
+  margin-bottom: -20px;
+  height: 180px;
+  filter: brightness(0) invert(1);
+}
+
+.rdt_TableRow {
+  padding: 4px 0;
+}
+.rdt_TableCell {
+  font-size: 1rem;
+  padding: 1rem 0;
+  text-align: left;
+}
+.rdt_TableHeadRow {
+  font-size: 1rem;
+  padding: 1rem 0;
+  font-weight: bolder;
+}
+.rdt_TableHeader div {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
